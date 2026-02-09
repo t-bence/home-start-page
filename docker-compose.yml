@@ -1,5 +1,5 @@
 services:
-  web:
+  home-start-page:
     build: .
     ports:
       - "80:80"
