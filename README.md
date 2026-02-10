@@ -35,3 +35,15 @@ Simply edit `index.html` and `styles.css` in your workspace. Changes will be ref
 ```bash
 docker-compose down
 ```
+
+## Template for compose.yml
+
+```yaml
+services:
+  home-start-page:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/usr/share/nginx/html/
+```
